@@ -17,8 +17,8 @@ The project's backend uses AWS Cognito for user authentication and Supabase as t
 
 - **User Storage**: Stores each user and provides one of three roles:
   - **Admin**: Full access to all data.
-  - **User**: Limited access to their own data.
-  - **Reader**: Can only view data.
+  - **User**: Limited access to their own data and reader's.
+  - **Reader**: Can only access reader's data.
 
 ### Server
 
@@ -65,6 +65,7 @@ bash
 Copy code
 
 ### Additional Features
+
 Pagination
 I began developing a pagination mechanism but couldn't complete it. Here’s a suggestion for implementing pagination in the future:
 
@@ -96,3 +97,4 @@ For improved performance and reliability, I recommend using data replication. Di
 
 Notification Service
 To support real-time updates, integrate a notification service that uses WebSocket connections with clients. This will allow the system to send delta information whenever tasks are updated.
+![Description of the image](./notificationSystem.jpeg)
